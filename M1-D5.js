@@ -142,7 +142,7 @@ console.log(cutString("rasmus")) // Prints "asmu"
 */
 
 
-function giveMeRandom(n) {
+let giveMeRandom = (n) => {
     let arrWithNums = [];
    
     for(i = 0; i < n; i++) {

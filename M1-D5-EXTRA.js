@@ -5,7 +5,22 @@
  The function should return the sum of just the numbers bigger than 5.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let checkArray = (n) => {
+    let sum = 0;
+    let newArr = [];
+
+    for(i = 0; i < n; i++) {
+        newArr.push(Math.floor(Math.random() * 10)); 
+        if (newArr[i] > 5) {
+            sum += newArr[i]
+        }
+    }
+
+    return sum;
+}
+console.log(checkArray(6));
+
+
 
 /* EXTRA 2
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
