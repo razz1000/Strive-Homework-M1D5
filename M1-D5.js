@@ -116,7 +116,15 @@ console.log(reverseString("rasmus")) // Prints sumsar
 */
 
 
+let upperFirst = (words) => { 
 
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    
+}
+}
+
+console.log(upperFirst.join("rasmus")) // Spits out undefined. Not sure what I am doing wrong here.....
 
 
 /* EXERCISE 9
