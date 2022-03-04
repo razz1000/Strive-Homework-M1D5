@@ -90,7 +90,14 @@ console.log(strivify("rasmus")); // Prints Strive rasmus
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+let check3and7 = (positiveNumber) => {
+    if (positiveNumber > 0 && positiveNumber % 3 === 0 || positiveNumber % 7 === 0) {
+        return positiveNumber + " Well done"
+    } else {
+        return "Not accepted"
+    }
+}
+console.log(check3and7(12)) // Prints 12 Well done
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
