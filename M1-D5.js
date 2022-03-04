@@ -141,7 +141,17 @@ console.log(cutString("rasmus")) // Prints "asmu"
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
+function giveMeRandom(n) {
+    let arrWithNums = [];
+   
+    for(i = 0; i < n; i++) {
+        arrWithNums.push(Math.floor(Math.random() * 10)); 
+    }
+   
+    return arrWithNums;
+}
+console.log(giveMeRandom(10));
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
