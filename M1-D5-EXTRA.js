@@ -27,7 +27,14 @@ console.log(checkArray(6));
  Create a function called "shoppingCartTotal" which calculates the total due to the shop.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
+
+let shoppingCartTotal = (price, name, id, quantityToBeShipped) => {
+ return "The name is:", name, id, "The total due is:", price  * quantityToBeShipped
+}
+
+console.log(shoppingCartTotal(120, "rasmus", 12221, 5)) // Prints 600.
+
 
 /* EXTRA 3
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
