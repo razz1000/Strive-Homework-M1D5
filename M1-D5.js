@@ -103,13 +103,21 @@ console.log(check3and7(12)) // Prints 12 Well done
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+
+let reverseString = (reverse1) => {
+    return reverse1.split("").reverse().join("");
+}
+
+console.log(reverseString("rasmus")) // Prints sumsar
 
 /* EXERCISE 8
+
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
+
+
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
