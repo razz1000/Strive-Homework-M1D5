@@ -117,16 +117,22 @@ console.log(reverseString("rasmus")) // Prints sumsar
 
 
 let upperFirst = (words) => { 
+    let rasmus = []
+   rasmus = words.split(" ")
 
-for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+for (let i = 0; i < rasmus.length; i++) {
+    
+    rasmus[i] = rasmus[i][0].toUpperCase() + rasmus[i].substr(1);
     
 }
+return rasmus.join(" ")
 }
 
-console.log(upperFirst("rasmus")) // Spits out undefined. Not sure what I am doing wrong here.....
+console.log(upperFirst("rasmus is strive school participant")) // Spits out undefined. Not sure what I am doing wrong here.....
 
 
+
+/* 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
@@ -153,6 +159,9 @@ let giveMeRandom = (n) => {
 }
 console.log(giveMeRandom(10));
 
+
+
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */
+ 
