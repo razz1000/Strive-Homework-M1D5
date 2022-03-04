@@ -124,14 +124,18 @@ for (let i = 0; i < words.length; i++) {
 }
 }
 
-console.log(upperFirst.join("rasmus")) // Spits out undefined. Not sure what I am doing wrong here.....
+console.log(upperFirst("rasmus")) // Spits out undefined. Not sure what I am doing wrong here.....
 
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let cutString = (str) => {
+    return str.substring(1, str.length -1); 
+}
+console.log(cutString("rasmus")) // Prints "asmu"
+
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
